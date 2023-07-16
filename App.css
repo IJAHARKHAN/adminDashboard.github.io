@@ -1,0 +1,338 @@
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root {
+    --offcanvas-width: 270px;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background-image: linear-gradient(blue, coral); */
+    background-color: #1f2672;
+}
+
+
+.sidebar-nav {
+    /* width: var(--offcanvas-width); */
+    width: 270px !important;
+    background-color: #F3F3F3;
+    border-right: transparent !important;
+
+}
+
+
+/* .navbar-nav i {
+    color: white;
+} */
+
+.side-ul-list{
+    width: 100%;
+}
+
+.sidebar-link{
+    display: flex;
+    align-items: center;
+    cursor: pointer;  
+    font-weight: 500;  
+}
+
+.sidebar-link i{
+    color: black;
+    font-size: 17px;
+}
+.sidebar-link .right-icon{
+   display: inline-flex;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon{
+  transform: rotate(180deg);
+}
+
+.bg-theme {
+    --bs-bg-opacity: 1;
+    background-color: #002F75 !important;
+}
+
+.adminLogo {
+    height: 34px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.adminLogo img {
+    width: 30%;
+}
+
+.navbar-toggler {
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: transparent;
+    outline: transparent;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler i.bi {
+    font-size: 39px;
+}
+
+.user-name{
+    white-space: nowrap;
+    text-overflow: ellipsis;    
+    overflow: hidden;
+    size: 20vw;
+  /* background: -webkit-linear-gradient(white, green); */
+  background: -webkit-linear-gradient(45deg, #09009f, #10bd75  80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .collapse ul.navbar-nav li a{
+    font-size: 15px;
+} */
+
+.singleList a{
+    font-weight: 500;
+}
+
+.med-box {
+    border: 0.5px solid #9f9f9f61;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.med-box .title {
+    background: #002F75;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 3px 5px;
+    color: #FFFFFF;
+}
+
+.med-box .inner-content{
+    padding: 3px 10px;
+}
+
+
+.med-box .inner-content .form-label {
+    margin-bottom: 0.1rem !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.med-box .inner-content [type="button"], .med-box .inner-content [type="submit"]{
+    min-width: 84px;
+    border-radius: 0;
+}
+
+.med-box .inner-content [type="button"]:hover, .med-box .inner-content [type="submit"]:hover{
+   opacity: 0.8;
+}
+
+.med-box .inner-content .btn-save{
+    background: #002F75;
+    color: white;
+}
+
+.med-box .inner-content .btn-clear{
+   background: #F16724;
+   color: white;
+}
+
+
+
+.med-table-section {
+    background: #FFFFFF;
+    border: 1px solid #9f9f9f3b;
+    overflow: auto;   
+    box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.med-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.med-table thead{
+   position: sticky;
+   top: 0;
+   z-index: 3;
+   background: #F2F2F2;
+   /* background: #ebf1ff; */
+}
+
+
+.med-table.border thead th{
+    border: 1px solid #9f9f9f59;  
+}
+
+.med-table.border tbody td{
+    border: 1px solid #9f9f9f59;  
+}
+
+ .med-table thead th {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #404040;
+    font-weight: 600;
+    text-align: left;   
+    border-bottom: 1px solid #9f9f9f59;
+    padding: 5px 4px;
+}
+
+.med-table.striped tbody tr:nth-of-type(even) {
+    background-color: #F2F2F2;
+}
+
+.med-table tbody tr:hover {
+    background-color: #F2F2F2;
+}
+
+.med-table tbody td {
+    /* border-bottom: 1px solid #9f9f9f3b; */
+    border-bottom: 1px solid #9f9f9f59;
+    font-size: 16px;   
+    padding: 3px 4px;
+}
+
+.wrap-content{
+    white-space: normal;
+}
+
+.action-button{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.action-button i {
+    padding: 2px 4px;
+    font-size: 17px;    
+    justify-content: center;
+    border-radius: 2px;   
+}
+
+.action-button .bg-edit {
+    background: #0080002e;
+    color: green;
+}
+
+.action-button .bg-delete{ 
+    background: #ff000036;
+    color: red;
+}
+
+.nav-link.sidebar-link {
+    background-image: linear-gradient(360deg, #68b17b2b, #271a6f1c);   
+}
+
+.custome-collapse a.nav-link {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 0;
+    font-size: 14px;
+    color: #000000c2;
+    border-bottom: 1px solid #0000001c;
+}
+
+.custome-collapse a.nav-link {
+    background-image: linear-gradient(90deg, #68b17b0a, #271a6f17);    
+}
+
+.custome-collapse a.nav-link:hover {
+    background-image: linear-gradient(45deg,  #68b17b57, #271a6f36);
+}
+
+.custome-collapse a.nav-link:focus {
+    background-image: linear-gradient(45deg,  #68b17b57, #271a6f36);    
+}
+
+.custome-collapse ul.navbar-nav {   
+    overflow-y: auto;
+    max-height: 310px;
+}
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        overflow-y: auto;
+    }
+    .offcanvas-bacdrop::before {
+        display: none;
+    }
+
+    .sidebar-nav {
+        transform: none !important;
+        visibility: visible !important;
+        top: 56px !important;
+        height: calc(100% - 56px);       
+    }
+    .btn-offcanvas-close {
+        display: none;
+    }
+    .main-content{
+        margin-left: 270px;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+
+/*  `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/*  `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .btn-offcanvas-close {
+        display: block;
+    }
+}
+
+/*  `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/*  `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
